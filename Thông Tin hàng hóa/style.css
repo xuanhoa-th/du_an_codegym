@@ -1,7 +1,43 @@
 *{margin: 0; padding: 0}
 
+select.h {
+    margin-left: 82px;
+}
+
+select.h {}
+
+input.i {
+    margin-left: 19px;
+}
+
+textarea {
+    margin-left: 79px;
+    width: 317px;
+    height: 80px;
+}
+
+input.g {
+    margin-left: 66px;
+}
+
+input.f {
+    margin-left: 73px;
+}
+
+input.e {
+    margin-left: 39px;
+}
+
+input.d {
+    margin-left: 42px;
+}
+
+input.c {
+    margin-left: 47px;
+}
+
 .hh {
-    /* margin-right: 0px; */
+    
     margin-left: 13px;
     margin-top: 6px;
 }
@@ -11,8 +47,7 @@ fieldset {
 }
 
 input[type="submit"] {
-    /* background: #70e5e0; */
-    /* font-size: 15px; */
+    
     color: #0066ff;
 }
 
@@ -33,16 +68,13 @@ input[type="reset"] {
     padding-left: 30px;
 }
 
-.chung1 {margin-top: 24px;padding: 10p;}
+.chung1 {margin-top: 9px;padding: 10p;}
 .ma{
-	width: 505px;
-	margin-left: 527px;
-	/*background: #7fe2ff8c;*/
+    width: 505px;
+    margin-left: 527px;
+    /*background: #7fe2ff8c;*/
 }
 .ti{
-	text-align: center;
-	margin-top: 17px;
-}
-{
-	font-size: 10px
+    text-align: center;
+    margin-top: 10px;
 }
