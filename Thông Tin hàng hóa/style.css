@@ -1,0 +1,48 @@
+*{margin: 0; padding: 0}
+
+.hh {
+    /* margin-right: 0px; */
+    margin-left: 13px;
+    margin-top: 6px;
+}
+
+fieldset {
+    background: #c5dfff;
+}
+
+input[type="submit"] {
+    /* background: #70e5e0; */
+    /* font-size: 15px; */
+    color: #0066ff;
+}
+
+input[type="reset"] {
+    color: red;
+}
+
+.re {
+    float: right;
+    margin-right: 62px;
+    font-size: 30px;
+    color: red;
+}
+
+.su {
+    font-size: 28px;
+    float: left;
+    padding-left: 30px;
+}
+
+.chung1 {margin-top: 24px;padding: 10p;}
+.ma{
+	width: 505px;
+	margin-left: 527px;
+	/*background: #7fe2ff8c;*/
+}
+.ti{
+	text-align: center;
+	margin-top: 17px;
+}
+{
+	font-size: 10px
+}

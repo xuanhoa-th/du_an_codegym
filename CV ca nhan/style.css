@@ -1,0 +1,102 @@
+* {margin: 0; padding: 0}
+
+.ab {
+    font-size: 20px;
+    color: white;
+}
+
+.ab_text {
+    padding: 20px;
+    margin: 10px;
+}
+
+.ns {
+    /* background: #e6e2e1; */
+    padding: 13px;
+    margin-top: 219px;
+    margin-right: 219px;
+    color: #636363;
+}
+
+.image {
+    float: right;
+    padding-right: 32px;
+}
+
+.edu_trai {
+    margin-left: 139px;
+    margin-top: 1px;
+    float: left;
+}
+
+.edu_phai {
+    float: right;
+    margin-right: 387px;
+}
+
+.edu_phai p, .edu_trai p {
+    margin: 10px;
+}
+
+.edu_trai {}
+
+.edu1 p {
+    margin: 17px;
+}
+
+.edu1 {
+    margin-left: 121px;
+}
+
+.edu {
+    text-align: center;
+    font-size: 30px;
+    padding: 9px;
+    border-radius: 123px;
+    background: #78a4d6;
+    color: white;
+    width: 559px;
+    margin-left: 127px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.edu span {
+	font-size: 15px;
+}
+
+.trai {
+    /* background: blanchedalmond; */
+    float: right;
+    width: 452px;
+}
+
+.phai {
+    /* background-color: aqua; */
+    float: left;
+    width: 1059px;
+}
+.phai .image{
+	float: left;
+}
+#menu1 {
+	text-align: center;
+	background-image: url(image/1311-anh5.jpg);
+	font-size: 60px;
+	height: 173px;
+	width: auto;
+}
+.name{
+	font-size: 74px;
+	padding-top: 20px;
+	color: #78a4d6;
+	height: 87px;
+}
+.abcd{
+	font-size: 38px;
+	background: #78a4d6;
+	color: white;
+	text-align: center;
+	border-radius: 128px;
+	margin-top: 30px;
+}
