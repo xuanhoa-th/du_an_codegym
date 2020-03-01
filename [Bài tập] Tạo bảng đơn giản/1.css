@@ -1,0 +1,48 @@
+
+*{
+	margin: 0;
+	padding: 0
+}
+
+th#bbbb {
+    background: #ff9685;
+}
+
+th#ba {
+    background: #ffdf43;
+}
+
+.right {float: right;color: #1d61c6;padding: 18px 17px;}
+
+.left {
+    float: left;
+    color: #1d61c6;
+    padding: 10px;
+    /* margin: 5px; */
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    color: #0243ba;
+}
+
+.tkb {
+    width: 600px;
+    /* padding: 49px; */
+    background: #eef7ff;
+    margin-left: 435px;
+    margin-top: 20px;
+    border: 2px solid #010101;
+}
+body{
+	font-family: sans-serif, 'tahoma'; 
+}
+table{
+	width: 600px;
+	border-collapse: collapse;
+}
+td, th{
+	padding: 15px;
+    border: 1px solid black;
+}

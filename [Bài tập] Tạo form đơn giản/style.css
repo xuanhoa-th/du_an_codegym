@@ -1,0 +1,87 @@
+*{
+	margin: 0;padding: 0
+}
+
+input[type="reset"] {
+    font-size: 15px;
+    /* margin-top: 10px; */
+    margin: 0px;
+    background: #cececd;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    background: #d1d0ce;
+    /* margin-top: 10px; */
+}
+
+.r {
+    float: right;
+    margin-right: 260px;
+    padding: 6px;
+    /* font-size: 21px; */
+    margin-top: 9px;
+}
+
+.s {float: left;background: #b4afa4;margin-left: 125px;margin-top: 16px;/* padding: 7px; *//* font-size: 13px; */}
+
+input[type="submit"] {}
+
+input.c {
+    margin-right: -3px;
+}
+
+input.b {
+    margin-left: 2px;
+}
+
+input.a {
+    margin-left: -20px;
+}
+
+.hobby2 {
+    color: #ff7f44;
+}
+
+.hobby1 {
+    color: blue;
+    margin-left: -157px;
+    padding-top: 6px;
+}
+
+.n {
+    color: blue;
+    margin-left: 25px;
+}
+
+.mann2 {
+    margin: 11px;
+    background: white;
+    font-size: 18px;
+    /* margin-bottom: 55px; */
+    height: 198px;
+}
+
+.nam {
+    padding: 12px;
+    color: blue;
+}
+
+main.ma {
+    text-align: center;
+    background: #b5f8ff;
+    width: 595px;
+    height: 264px;
+    margin-left: 469px;
+    margin-top: 28px;
+}
+
+h2.st {
+    text-transform: uppercase;
+    background: #ffca34;
+    color: white;
+    padding: 7px;
+}
+main{
+	font-family:  arial, sans-serif;
+}
