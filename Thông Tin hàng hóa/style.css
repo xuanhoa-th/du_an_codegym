@@ -48,7 +48,7 @@ fieldset {
 
 input[type="submit"] {
     
-    color: #0066ff;
+color: #0066ff;
 }
 
 input[type="reset"] {
@@ -58,12 +58,12 @@ input[type="reset"] {
 .re {
     float: right;
     margin-right: 62px;
-    font-size: 30px;
+    font-size: 21px;
     color: red;
 }
 
 .su {
-    font-size: 28px;
+    font-size: 22px;
     float: left;
     padding-left: 30px;
 }
