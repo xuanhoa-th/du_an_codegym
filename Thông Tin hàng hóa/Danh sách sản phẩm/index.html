@@ -6,11 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="danh_sach.css">
 </head>
 <body>
-	<div class="ma" id="myForm">
+	<div class="ma" id="myForm" style="width: 505px;margin-left: 527px; display: none; ">
 		<div align="center"><h2 ><b>NHẬP THÔNG TIN HÀNG HÓA</b></h2></div>
 	<div class="form_menu" >
 		<form action="#" method="POST">
-			<fieldset>
+			<fieldset style="background: #c5dfff;">
 				<table  >
 				<tr>
 					<td >
@@ -65,7 +65,7 @@
 				</tr>
 				<tr height="60px">
 					<td>Ghi chú</td>
-					<td><textarea placeholder="Nhập thông tin cần ghi chú"></textarea></td>
+					<td><textarea placeholder="Nhập thông tin cần ghi chú" style="width: 317px;height: 80px;"></textarea></td>
 				</tr>
 				<tr height="40px">
 					<td>Kho</td>
@@ -83,10 +83,11 @@
 				</tr>
 				<tr height="40px">
 					<td ></td>
-					<td align="center"><input type="reset" name="" value="Reset">
-					<input type="submit" name="" value="Save ">
+					<td align="center">
+					<input type="reset" name="" value="Reset" style="color: red;">
+					<input type="submit" name="" value="Save " style="color: #0066ff;">
 					<!-- <input type="button" value="Đóng" onclick="closeForm()"> -->
-					<a href="index.html" onclick="closeForm()" width="10" >Close</a>
+					<a href="index.html" onclick="closeForm()" width="10" style="color: #ce0909;border: 1px solid #8b8989;background: white;text-decoration: none;" >Close</a>
 					
 				</td>
 				</td>
@@ -102,8 +103,8 @@
 	</div>
 
 	<!-- ----danh-sach-san-pham---- -->
-	<table border="1" width="100%" cellspacing="10" bgcolor="#fef6e3" id="my_table">
-		<caption><h2>Danh sách sản phẩm</h2></caption>
+	<table border="1" width="100%" cellspacing="10" bgcolor="#fef6e3" id="my_table" style="border-collapse: collapse; ">
+		<caption><h2 style="padding: 20px">Danh sách sản phẩm</h2></caption>
 		<tr >
 			<th >STT</th>
 			<th width="70" height="50" >Tên hàng hóa</th>
