@@ -1,4 +1,14 @@
 *{margin: 0; padding: 0}
+
+a {
+    color: 12px;
+    color: #ce0909;
+    border: 1px solid #8b8989;
+    background: white;
+    text-decoration: none;
+    /* height: 13px; */
+    /* margin: 1px 0px 99px; */
+}
 textarea {
     width: 317px;
     height: 80px;

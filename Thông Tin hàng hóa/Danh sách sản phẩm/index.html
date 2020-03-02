@@ -85,12 +85,15 @@
 					<td ></td>
 					<td align="center"><input type="reset" name="" value="Reset">
 					<input type="submit" name="" value="Save ">
-					<input type="button" value="Đóng" onclick="closeForm()"></td>
+					<!-- <input type="button" value="Đóng" onclick="closeForm()"> -->
+					<a href="index.html" onclick="closeForm()" width="10" >Close</a>
+					
+				</td>
 				</td>
 				</tr>
-				<!-- <tr>
+				<tr>
 					<td><input name="secret" value="abcg124faasfjh149dfd" type="hidden"></td>
-				</tr> -->
+				</tr>
 
 			</table>
 		</fieldset>
@@ -213,12 +216,12 @@
 	<script>
         function showForm(){
             document.getElementById("myForm").style.display = "block";
-            // document.getElementById("my_table").style.display = "none";
+            document.getElementById("my_table").style.display = "none";
 
         }
         function closeForm(){
             document.getElementById("myForm").style.display = "none";
-            // document.getElementById("my_table").style.display = "block";
+            document.getElementById("my_table").style.display = "block";
 
         }
     </script>
