@@ -8,8 +8,14 @@ table{
 	width: 600px;
 	height: 600px;
 	text-align: center;
-	margin-left: 410px;
+	margin-left: 415px;
 	background: #f89809;
+	border-collapse: collapse;
+	border: 2px solid #f89809;
+}
+
+tbody {
+    /* margin-left: 53px; */
 }
 
 td#one {

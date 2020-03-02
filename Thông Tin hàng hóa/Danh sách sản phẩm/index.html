@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Danh sach san pham</title>
+	<link rel="stylesheet" type="text/css" href="danh_sach.css">
+</head>
+<body>
+	<div class="ma" id="myForm">
+		<div align="center"><h2 ><b>NHẬP THÔNG TIN HÀNG HÓA</b></h2></div>
+	<div class="form_menu" >
+		<form action="#" method="POST">
+			<fieldset>
+				<table  >
+				<tr>
+					<td >
+						<button type="button">
+      					<img src="https://sachxanh.vn/images/logos/1/logo-sach-xanh.png" width="100px"/>
+  						</button>
+					</td>
+				</tr>
+				<tr height="40px" >
+					<td  >Tên đăng nhập</td>
+					<td><input type="text" name="name" placeholder ="Nhập tên đăng nhập"></td>
+				</tr>
+				<tr height="40px">
+					<td>Mật khẩu</td>
+					<td><input type="password" name="name" value=""></td>
+				</tr>
+
+				<tr height="40px">
+					<td>Tên vật tư,hàng hóa</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr height="40px">
+					<td>Đơn giá mua</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr height="40px">
+					<td>Ngày nhập</td>
+					<td><input type="date" name=""></td>
+				</tr>
+
+				<tr height="40px">
+					<td>Tiêu chuẩn</td>
+					<td><input type="checkbox" name=""> VietGap <input type="checkbox" name="">TCVN <input type="checkbox" name="">TKNL</td>
+				</tr>
+				<tr height="40px">
+					<td>Ảnh sản phẩm</td>
+					<td><input type="file" name="" alt="ảnh không hợp lệ"></td>
+				</tr>
+
+				<tr height="40px">
+					<td>Số lượng</td>
+					<td><input type="text" name="" ></td>
+				</tr>
+				<tr height="40px">
+					<td>Xuất sứ</td>
+					<td><input type="radio" name="gt" > Sản phẩm nhập khẩu
+				        <input type="radio" name="gt"> Sản phẩm nội địa</td>
+				</tr>
+				<tr height="40px">
+					<td>Thuế xuất</td>
+					<td><input type="text" name="" placeholder="đơn vị %"></td>
+				</tr>
+				<tr height="60px">
+					<td>Ghi chú</td>
+					<td><textarea placeholder="Nhập thông tin cần ghi chú"></textarea></td>
+				</tr>
+				<tr height="40px">
+					<td>Kho</td>
+					<td><select>
+					<option>Tùy chọn</option>
+					<option>Kho Hà Đông , Hà nội</option>
+					<option>Kho Việt Trì, Phú Thọ</option>
+					<option>Kho Ninh Kiều, Cần Thơ</option>
+					<option>Kho Kiến An, Hải Phòng</option>
+					</select></td>
+				</tr>
+				<tr height="40px">
+					<td>Tài khoản chi phí (VNĐ)</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr height="40px">
+					<td ></td>
+					<td align="center"><input type="reset" name="" value="Reset">
+					<input type="submit" name="" value="Save ">
+					<input type="button" value="Đóng" onclick="closeForm()"></td>
+				</td>
+				</tr>
+				<!-- <tr>
+					<td><input name="secret" value="abcg124faasfjh149dfd" type="hidden"></td>
+				</tr> -->
+
+			</table>
+		</fieldset>
+	</form>
+	</div>	
+	</div>
+
+	<!-- ----danh-sach-san-pham---- -->
+	<table border="1" width="100%" cellspacing="10" bgcolor="#fef6e3" id="my_table">
+		<caption><h2>Danh sách sản phẩm</h2></caption>
+		<tr >
+			<th >STT</th>
+			<th width="70" height="50" >Tên hàng hóa</th>
+			<th>Đơn giá mua(VNĐ)</th>
+			<th>Ngày nhập</th>
+			<th>Tiêu chuẩn</th>
+			<th>Ảnh sản phẩm(nếu có)</th>
+			<th>Số lượng</th>
+			<th>Xuất sứ</th>
+			<th>Thuế xuất</th>
+			<th>Ghi chú</th>
+			<th>Kho</th>
+			<th>Thành tiền(VNĐ)</th>
+			<th colspan="2">Thao tác</th>
+
+		</tr>
+
+		<tr >
+			<td>1</td>
+			<td>Cherry Úc</td>
+			<td>570.000</td>
+			<td>17/2/2020</td>
+			<td>TKNL</td>
+			<td></td>
+			<td>15</td>
+			<td>Úc</td>
+			<td>5%</td>
+			<td></td>
+			<td>Kho Hà Đông,Hà Nội</td>
+			<td></td>
+			<td><button>Sửa</button> <button>Xóa</button> </td>
+			<td rowspan ="6" align="center"><button onclick="showForm()">Thêm sản phẩm</button></td>
+	
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Nho</td>
+			<td>200.000</td>
+			<td>30/2/2020</td>
+			<td>VietGap</td>
+			<td></td>
+			<td>6</td>
+			<td>Việt Nam</td>
+			<td>0%</td>
+			<td></td>
+			<td>Kho Kiến An,Hải Phòng</td>
+			<td></td>
+			<td> <button>Sửa</button> <button>Xóa</button> </td>
+	
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Dưa sữa Nhật</td>
+			<td>250.000</td>
+			<td>25/2/2020</td>
+			<td>TCVN</td>
+			<td></td>
+			<td>35</td>
+			<td>Đài Loan</td>
+			<td>15%</td>
+			<td></td>
+			<td>Kiến An ,Hải Phòng</td>
+			<td></td>
+			<td><button>Sửa</button> <button>Xóa</button> </td>
+	
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>Na </td>
+			<td>300.000</td>
+			<td>25/2/2020</td>
+			<td>TKNL</td>
+			<td></td>
+			<td>10</td>
+			<td>Nhật Bản</td>
+			<td>15%</td>
+			<td></td>
+			<td>Kho Hà Đông,Hà Nội</td>
+			<td></td>
+			<td><button>Sửa</button> <button>Xóa</button> </td>
+	
+		</tr>
+		<tr>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td>...</td>
+			<td> <button>Sửa</button> <button>Xóa</button> </td>
+			
+		</tr>
+		<tr>
+			<td colspan="11" align="center"><h4>Tổng tiền</h4></td>
+			<td colspan="2"></td>
+		</tr>
+
+
+	</table>
+
+
+
+	<script>
+        function showForm(){
+            document.getElementById("myForm").style.display = "block";
+            // document.getElementById("my_table").style.display = "none";
+
+        }
+        function closeForm(){
+            document.getElementById("myForm").style.display = "none";
+            // document.getElementById("my_table").style.display = "block";
+
+        }
+    </script>
+</body>
+</html>

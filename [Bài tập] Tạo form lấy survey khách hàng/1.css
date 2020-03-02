@@ -52,6 +52,10 @@ input[type="text"] {
     margin-top: 5px;
 }
 
+/*input[type=text]:focus {
+  background-color: #dfcb54;*/
+}
+
 p {
     /* margin-top: 7px; */
 }
@@ -93,7 +97,7 @@ tr {}
 tr#nau:hover {
     background-color: #dfcb54;
 }
-select :focus {
+select:focus {
   background-color: yellow;
 }
  th,td{
