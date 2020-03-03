@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>[Thực hành] Khai báo và sử dụng biến</title>
+</head>
+<body>
+	<script type="text/javascript">
+		i = 10;
+		f = 20.5;
+		b = true;
+		s = 'ha noi';
+
+		document.write('i=' + i);
+		document.write('<br/>');
+		document.write('f=' + f);
+		document.write('<br/>');
+		document.write('b=' + b);
+		document.write('<br/>');
+		document.write('s=' + s);
+		document.write('<br/>');
+
+		whith = 20;
+		heigh = 5;
+		arena = whith*heigh;
+		document.write('dien tich arena =' + arena);
+
+		function sum() {
+			var a = +prompt("a = ");
+			var b = +prompt("b = ");
+			// var c = confirm(a%b===0)
+			alert(a%b===0)
+		}
+
+
+
+
+
+
+	</script>
+	<br>
+	<button onclick="sum()">kiem tra</button>
+</body>
+</html>
