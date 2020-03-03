@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript</title>
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.13">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function hellsome(){
+			var fullname = prompt('ho va ten');
+			document.write("xin chao" + fullname);
+		}
+		function calsum(){
+			let x = +prompt("x =");
+			// x = Number.parseFloat()
+			let y = +prompt("y =");
+			document.write("x+y =" + (x+y));
+		}
+
+	</script>
+</head>
+<body onload ="alert('trang da dc tai xong')">
+	<button onclick="hellsome('ho va ten')">nhap ho ten</button>
+	<button onclick="confim('ban co muon thuc su dong')">dong</button>
+	<button onclick="calsum()">tinh tong</button>
+
+	
+	<p>
+		<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw "></i>
+		<i class="fa fa-address-book"></i>
+		<i class="fa fa-cog fa-spin fa-3x fa-fw "></i>
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i>
+        <i class="fa fa-arrow-alt-circle-up"></i>
+	</p>
+</body>
+</html>
