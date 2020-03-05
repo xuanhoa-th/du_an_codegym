@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình Tam Giác</title>
+    <script>
+
+        function iCheck() {
+            let a = prompt("Nhập số a= "); //biến cục bộ
+            a = Number.parseFloat(a);
+            let b = prompt("Nhập số b= ");
+            b = Number.parseFloat(b);
+            let c = prompt("Nhập số c= ");
+            c = Number.parseFloat(c);
+            if (isTamGiac(a , b , c)) {
+                alert("Bạn đã nhập là tam giác")
+                if (isTamgiacdeu(a, b, c)) {
+                    alert("Đó là tam giác đều")
+                }
+                if (isTamGiacCan(a, b, c)){
+                    alert("Đó tam giác cân")
+                }
+                if (isTamGiacVuong(a, b, c)){
+                    alert("Đó là tam giác vuông");
+                }
+                alert("Chu vi tam giác bạn nhập là " + (a + b + c));
+                let output = (Math.sqrt((a + b + c) * (a + b - c) * (b + c - a) * (c + a - b))) / 4;
+                alert("Diện tích tam giác đó là " + output);
+            } else {
+                alert("Bạn nhập không phải là cạnh của tam giác");
+            }
+        }
+        function isTamGiac(x, y ,z) { //kiểm tra tính hợp lệ của tam giác
+            if ((x + y) > z && (x + z) > y && (y + z) > x) { // tham số x y z sẽ nhận giá trị truyền vào tương ứng a, b ,c
+                return true; // khi ta cho giá trị lúc gọi hàm funtion tại phần khác nhau của document
+            }
+            return  false;
+        }
+
+        function isTamgiacdeu(q, w, e) {
+           if (q == w && q == e ) {
+               return true;
+           }
+           return false;
+        }
+        function isTamGiacCan(t, u, v) {
+            if (t == u || t == v || u == v){
+                return true;
+            }
+            return false;
+        }
+        function isTamGiacVuong(m, n, o) {
+            if ((m * m) + (n * n) == o * o || (m * m) + (o * o) == n * n||(o * o) + (n * n) == m * m){
+                return true;
+            }
+            return false;
+        }
+    </script>
+</head>
+<body style="width: 30%; margin: 0 auto;">
+<h4>Hãy bấm vào đây:<input type="button" onclick="iCheck()" value="Checked"></h4>
+<h4>Bấm đây nữa đi anh ơi</h4>
+</body>
+</html>
