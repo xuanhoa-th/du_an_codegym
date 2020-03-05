@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+</head>
+<body>
+	<h1>Tính điểm:</h1>
+	<script type="text/javascript">
+		inputVatly = prompt("Nhập điểm môn Vật lý");
+		inputHoahoc = prompt("Nhập điểm môn Hóa học");
+		inputSinhhoc = prompt("Nhập điểm môn Sinh học");
+
+		let Vat_ly = parseFloat(inputVatly);
+		let Hoa_hoc = parseFloat(inputHoahoc);
+		let Sinh_hoc = parseFloat(inputSinhhoc);
+		let TB = (Vat_ly+Hoa_hoc+Sinh_hoc)/3;
+		let SUM = (Vat_ly+Hoa_hoc+Sinh_hoc);
+
+		document.write("Vật lý =" + Vat_ly );
+		document.write('<br/>');
+		document.write("Hóa học =" + Hoa_hoc );
+		document.write('<br/>');
+		document.write("Sinh học =" + Sinh_hoc );
+		document.write('<hr/>');
+
+		document.write("Điểm trung bình =" + TB );
+		document.write('<br/>');
+		document.write("Tổng điểm =" + SUM );
+	</script>
+</body>
+</html>
