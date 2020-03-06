@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>[Thực hành] Kiểm tra năm nhuận</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let year = parseInt(prompt("nhap nam"));
+
+		if (year % 4 == 0) {
+			if (year %100 == 0) {
+				if (year % 400 == 0) {
+					alert(year + "la nam nhuan");
+				} else { alert( year + 'khong phai nam nhuan');
+			  }
+			} else {
+				alert(year + 'la nam nhuan');
+			}
+		} else {
+			alert(year + " khong phai la nam nhuan");
+		}
+
+// 		let isLeapYear = false;
+
+// let isDivisibleBy4 = year % 4 == 0;
+// if (isDivisibleBy4) {
+//   let isDivisibleBy100 = year % 100 == 0;
+//   if (isDivisibleBy100) {
+//     let isDivisibleBy400 = year % 400 == 0;
+//     if (isDivisibleBy400) {
+//       isLeapYear = true;
+//     }
+//   } else {
+//     isLeapYear = true;
+//   }
+// }
+
+// if (isLeapYear) {
+//   alert(year + " is a leap year");
+// } else {
+//   alert(year + " is NOT a leap year");
+// }
+
+	</script>
+</body>
+</html>
