@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bài tập tam tam</title>
+	<title>Check_Triangle</title>
 </head>
 <body>
-<h3 style="text-align: center;">Nhập vào 3 cạnh của tam giác</h3>
+<div class="container" style="width: 41%;margin-left: 29%;background-color: #affffa;font-family: sans-serif;padding: 8px;">
+	<h3 style="text-align: center;">Nhập vào 3 cạnh của tam giác</h3>
 <form>
 	<table align="center">
 		<tr>
@@ -20,7 +21,7 @@
 		</tr>
 		
 	</table>
-	<button type="reset" value="" style="margin-left: 62.7% ; color: red">Reset</button>
+	<button type="reset" value="" style="margin-left: 80.7% ; color: red">Reset</button>
 </form>
 <div class="tamGiac" style="text-align: center;">
 	<button onclick="myFunction();" value="" id="onc">Xem kết quả</button>
@@ -28,56 +29,7 @@
 	<p id="result_S" style="color: blue"></p>
 	<p id="result_P" style="color: blue"></p>
 </div>
-	<script type="text/javascript">
-		function myFunction(){
-			// let a,b,c;
-
-			let a = Number(document.getElementById("edge1").value);
-			let b = Number(document.getElementById("edge2").value);
-			let c = Number(document.getElementById("edge3").value);
-
-			let acreage,p;
-			//kiểm tra đã nhập được giá trị a,b,c vào chưa.
-			// document.write('a ='+ a);
-			// document.write('<br/>');
-			// document.write('b ='+ b);
-			// document.write('<br/>');
-			// document.write('c ='+ c);
-			p = (a+b+c)/2;
-			acreage = Math.sqrt( p*(p-a)*(p-b)*(p-c) )
-		let	perimeter = (a+b+c)
-
-			if (a<b+c && b<a+c && c<a+b){
-				 	if (a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b){ 
-				 		  // alert("Là tam giác vuông, s = " + ((a*b)/2) )
-				 		  document.getElementById('result_kq').innerHTML= ("Là tam giác vuông");
-				 		  document.getElementById('result_S').innerHTML= ("Diện tích S =" + (a*b)/2);
-				 		  document.getElementById('result_P').innerHTML= ("Chu vi P =" + perimeter);
-
-				 		}
-				 	else
-				 		if (a==b && b==c){
-				 			document.getElementById('result_kq').innerHTML= ("Là tam giác đều");
-				 			document.getElementById('result_S').innerHTML= ("Diện tích S =" + acreage );
-				 			 document.getElementById('result_P').innerHTML= ("Chu vi P =" + perimeter);
-
-				 			}
-				 			else
-				 				if (a==b || a==c || b==c){
-				 					document.getElementById('result_kq').innerHTML= ("Là tam giác cân");
-				 					document.getElementById('result_S').innerHTML= ("Diện tích S =" + acreage);
-				 					document.getElementById('result_P').innerHTML= ("Chu vi P =" + perimeter);
-				 							}
-				 					else
-				 					{
-				 						 document.getElementById('result_kq').innerHTML= ("Là 3 cạnh tam giác");
-				 						 document.getElementById('result_S').innerHTML= ("Diện tích S =" + acreage);
-				 		  				 document.getElementById('result_P').innerHTML= ("Chu vi P =" + perimeter);
-				 					}
-				 					
-			}
-				else document.getElementById('result_kq').innerHTML= ("Không phải là 3 cạnh tam giác") ;
-			}
-	</script>
+</div>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
