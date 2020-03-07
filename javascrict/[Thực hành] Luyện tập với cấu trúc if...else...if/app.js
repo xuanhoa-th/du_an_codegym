@@ -17,15 +17,16 @@
 let userName = prompt("who's there?",'');
 if (userName == 'admin') {
 	alert("welcome");
-} else if (userName == null){
+} else if (userName === ""){
 	alert("canceled");
 } else {
 	alert(" i dont know");
 }
+
 let pass = prompt("password",'');
 if (pass == 'theMaster') {
 	alert("wellcom");
-} else if (pass == null) {
+} else if (pass == "") {
 	alert('canled');
 } else {
 	alert("wrong password");
