@@ -49,13 +49,29 @@
             let donvi     = (n % 10);
            let dcs = "";
            dcs += motSo(tramtrieu) + " trăm ";
+           if (chuctrieu == 0) {dcs += "";}
+           else 
            dcs += motSo(chuctrieu) + " mươi ";
+           if (trieu == 0) {dcs += "";}
+           else
            dcs += motSo(trieu) + " triệu ";
+          if (tramnghin == 0) {dcs += "";}
+          else
            dcs += motSo(tramnghin) + " trăm ";
+         if (muoinghin ==0) {dcs += "";}
+         else
            dcs += motSo(muoinghin) + " mươi ";
+         if (ngin == 0) {dcs += "";}
+         else
            dcs += motSo(ngin) + " nghìn ";
+         if (tram == 0) {dcs += "";}
+         else
            dcs += motSo(tram) + " trăm ";
+         if (chuc == 0) {dcs += "";}
            dcs += motSo(chuc) + " mươi ";
+         if (donvi ==0) {dcs += " ";}
+         else if (donvi ==1){dcs += "mot ";}
+         else
            dcs += motSo(donvi);
            return dcs;
         } 
