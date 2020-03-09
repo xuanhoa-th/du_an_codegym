@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Doc so</title>
+    <title>9 chư so</title>
 </head>
 <body>
 <input type="text" name="" id="nhapso">
@@ -12,12 +12,11 @@
         function input() {
             let n = Number(document.getElementById("nhapso").value);
             // alert(n);
-            document.getElementById('result').innerHTML = ("Số"+n+ ":"+ ChinChuSo(n));
+            document.getElementById('result').innerHTML = ("Số"+ n + " : "+ ChinChuSo(n));
             // alert(ChinChuSo(n));
 
-         //    var value = Math.round(5 % 100000000);
+         //    var value = Math.floor(5 % 100000000);
          // document.write("<br />Second Test Value : " + value ); 
-
         }
         function motSo(n) {
             switch (n) {
@@ -35,31 +34,31 @@
             }
         }
         function ChinChuSo(n) {
-           let tramtrieu = Math.round((n % 1000000000) /100000000);
+           let tramtrieu = Math.floor((n % 1000000000)/100000000);
            // alert(tramtrieu);
-           let chuctrieu = Math.round((n % 100000000) / 10000000);
+           let chuctrieu = Math.floor((n % 100000000)/10000000);
            // alert(chuctrieu);
-           let trieu     = Math.round((n % 10000000) / 1000000);
-           let tramng    = Math.round((n % 1000000) / 100000);
-           // alert(tramng);
-           let muoinghin = Math.round((n % 100000) / 10000);
-           let ngin      = Math.round((n % 10000) / 1000);
-            let tram      = Math.round((n % 1000) / 100);
-            let chuc      = Math.round((n % 100) / 10);
-            let donvi      = (n % 10);
-           let str = "";
-           str += motSo(tramtrieu) + " trăm ";
-           str += motSo(chuctrieu) + " mươi ";
-           str += motSo(trieu) + " triệu ";
-           str += motSo(tramng) + " trăm ";
-           str += motSo(muoinghin) + " mươi ";
-           str += motSo(ngin) + " nghìn ";
-           str += motSo(tram) + " trăm ";
-           str += motSo(chuc) + " mươi ";
-           str += motSo(donvi);
-           return str;
-        }
-        
+           let trieu     = Math.floor((n % 10000000)/1000000);
+           let tramnghin = Math.floor((n % 1000000)/100000);
+           // alert(tramnghin);
+           let muoinghin = Math.floor((n % 100000)/10000);
+           // alert(muoinghin);
+           let ngin       = Math.floor((n % 10000)/1000);
+            let tram      = Math.floor((n % 1000)/100);
+            let chuc      = Math.floor((n % 100)/10);
+            let donvi     = (n % 10);
+           let dcs = "";
+           dcs += motSo(tramtrieu) + " trăm ";
+           dcs += motSo(chuctrieu) + " mươi ";
+           dcs += motSo(trieu) + " triệu ";
+           dcs += motSo(tramnghin) + " trăm ";
+           dcs += motSo(muoinghin) + " mươi ";
+           dcs += motSo(ngin) + " nghìn ";
+           dcs += motSo(tram) + " trăm ";
+           dcs += motSo(chuc) + " mươi ";
+           dcs += motSo(donvi);
+           return dcs;
+        } 
     </script>
 </body>
 </html>
