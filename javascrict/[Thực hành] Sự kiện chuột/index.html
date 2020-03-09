@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mouse event</title>
+</head>
+<body>
+<form action="">
+	<img src="image/1 (1).png" alt="" id="image">
+	<p> Click button below to move the image to right</p>
+	<input type="button" value="Click me" onclick="moveRight()">
+</form>
+
+
+<script>
+	let imgObi = null;
+	imgObi = document.getElementById('image');
+	function init() {
+		imgObi = document.getElementById('image');
+		imgObi.style.position ='relative';
+		imgObi.style.left = '0px';
+		imgObi.style.top = '0px';
+	}
+	function moveRight() {
+		let ab = imgObi.style.left = parseFloat(imgObi.style.left) + 10 + 'px';
+		let ac = imgObi.style.top = parseFloat(imgObi.style.top) + 20 + 'px';
+		// document.write(ab);
+		// document.write(ac);
+	}
+	window.onload = init;
+</script>
+</body>
+</html>

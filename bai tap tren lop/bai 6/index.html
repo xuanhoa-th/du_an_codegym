@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function doc1So(n)//Đọc số có 1 chữ
+        {
+            switch(n){
+                case 0 : return "Không";
+                case 1 : return "Một";
+                case 2 : return "Hai";
+                case 3 : return "Ba";
+                case 4 : return "Bốn";
+                case 5 : return "Năm";
+                case 6 : return "Sáu";
+                case 7 : return "Bảy";
+                case 8 : return "Tám";
+                case 9 : return "Chín";
+                default : return "Không biết!";
+
+            }
+        }
+
+        function doc3So(n)//Đọc số có 3 chữ số VD: 123
+        {
+            let tram = Math.floor(n/100);/// Math.round(): làm tròn, Math.floor(): số sàn, Math.ceil(): số trần
+            let chuc = (Math.floor(n/10)) % 10;// 123 / 10 = 12 % 10 =
+            let donVi = n % 10;
+
+            let str = "";
+            str += doc1So(tram)+ " tram ";
+            if(chuc == 0)
+                str += "  ";
+            else
+                str += doc1So(chuc)+ " muoi ";
+            str += doc1So(donVi);
+
+            return str;
+        }
+/* BTVN:
+1/ Viết bài đọc 3 số cho tự nhiên hơn.
+2/ Đọc số có 9 chữ số. VD: 123.456.789: Một trăm hai muoi ba triệu bốn trăm năm muoi sau nghin bay tram tam muoi chin
+ */
+
+        function docSo(){
+            let n;
+            n = prompt("Nhập một số có 1 chữ số");
+            n = Number.parseInt(n);
+            alert(doc3So(n));
+        }
+
+    </script>
+</head>
+<body>
+<button onclick="docSo()">Nhập số</button>
+
+
+</body>
+</html>

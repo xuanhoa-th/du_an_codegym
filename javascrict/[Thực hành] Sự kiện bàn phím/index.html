@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keyboard events</title>
+</head>
+<body onload="docReady()">
+	<img id="nobita" src="image/1.png" style="position: absolute; left: 0; top: 0;" height="" width="150">
+
+	<script type="text/javascript">
+		// xay dung ham nhan len
+		function upArrowPressed(){
+			let element = document.getElementById("nobita");
+			element.style.top = parseInt(element.style.top) -5 + 'px';
+
+			console.log(element.style.top);
+		}
+		//xay dung ham nhan xuong
+		function downArrowPressed(){
+			let element = document.getElementById("nobita");
+			element.style.top = parseInt(element.style.top) + 5 + 'px';
+		}
+		//xay dung ham nhan sang phai
+		function rightArrowPressed(){
+			let element = document.getElementById("nobita");
+			element.style.left = parseInt(element.style.left) + 5 + 'px';
+		}
+		//xay dung ham nhan sang trai
+		function leftArrowPressed(){
+			let element = document.getElementById("nobita");
+			element.style.right = parseInt(element.style.right) - 5 + 'px';
+		}
+		//xay dung ham nhan phim
+		function moveSelection(evt)
+			{
+				switch (evt.keyCode) {
+					case 37: 
+						leftArrowPressed();
+						break;
+					case 38:
+						upArrowPressed();
+						break;
+					case 39: 
+					   rightArrowPressed();
+						break;
+					case 40: 
+						downArrowPressed();
+						break;
+				}
+			}
+		function docReady() {
+        window.addEventListener('keydown', moveSelection);
+		}
+
+	</script>
+</body>
+</html>

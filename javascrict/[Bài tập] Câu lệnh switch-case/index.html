@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>[Bài tập] Câu lệnh switch-case</title>
+</head>
+<body>
+	<div class="container" style="text-align: center;">
+		<h2>[Bài tập] Câu lệnh switch-case</h2>
+	<select id="soNgay">
+		<option value="1">Tháng 1</option>
+		<option value="2">Tháng 2</option>
+		<option value="3">Tháng 3</option>
+		<option value="4">Tháng 4</option>
+		<option value="5">Tháng 5</option>
+		<option value="6">Tháng 6</option>
+		<option value="7">Tháng 7</option>
+		<option value="8">Tháng 8</option>
+		<option value="9">Tháng 9</option>
+		<option value="10">Tháng 10</option>
+		<option value="11">Tháng 11</option>
+		<option value="12">Tháng 12</option>
+	</select>
+	<button onclick="tinhsongay()">Tính số ngày</button>
+	<p id="result"></p>
+	</div>
+	
+
+	<script type="text/javascript">
+		function tinhsongay() {
+			let x = Number(document.getElementById("soNgay").value);
+			document.getElementById('result').innerHTML= (" Thang " + x + " co " + "ngay");
+		}
+
+		function tinhngay(ngay){
+			switch (ngay) {
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12: return 31;
+				case 4:
+				case 6:
+				case 9:
+				case 11: return 30;
+				case 2: return 28 ;
+				default:
+					return "khong phai la thang hop le"
+			}
+		}
+	</script>
+</body>
+</html>
