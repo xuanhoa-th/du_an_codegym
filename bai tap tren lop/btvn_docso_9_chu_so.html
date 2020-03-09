@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doc so</title>
+</head>
+<body>
+<input type="text" name="" id="nhapso">
+<p id="result" style="color: blue;"><b></b></p>
+<button onclick="input()">Click?</button>
+<script>
+        function input() {
+            let n = Number(document.getElementById("nhapso").value);
+            // alert(n);
+            document.getElementById('result').innerHTML = ("Số"+n+ ":"+ ChinChuSo(n));
+            // alert(ChinChuSo(n));
+
+         //    var value = Math.round(5 % 100000000);
+         // document.write("<br />Second Test Value : " + value ); 
+
+        }
+        function motSo(n) {
+            switch (n) {
+                case 0: return "không";
+                case 1: return "một";
+                case 2: return "hai";
+                case 3: return "ba";
+                case 4: return "bốn";
+                case 5: return "năm";
+                case 6: return "sáu";
+                case 7: return "bảy";
+                case 8: return "tám";
+                case 9: return "chín";
+                default: return "Không biết số";
+            }
+        }
+        function ChinChuSo(n) {
+           let tramtrieu = Math.round((n % 1000000000) /100000000);
+           // alert(tramtrieu);
+           let chuctrieu = Math.round((n % 100000000) / 10000000);
+           // alert(chuctrieu);
+           let trieu     = Math.round((n % 10000000) / 1000000);
+           let tramng    = Math.round((n % 1000000) / 100000);
+           // alert(tramng);
+           let muoinghin = Math.round((n % 100000) / 10000);
+           let ngin      = Math.round((n % 10000) / 1000);
+            let tram      = Math.round((n % 1000) / 100);
+            let chuc      = Math.round((n % 100) / 10);
+            let donvi      = (n % 10);
+           let str = "";
+           str += motSo(tramtrieu) + " trăm ";
+           str += motSo(chuctrieu) + " mươi ";
+           str += motSo(trieu) + " triệu ";
+           str += motSo(tramng) + " trăm ";
+           str += motSo(muoinghin) + " mươi ";
+           str += motSo(ngin) + " nghìn ";
+           str += motSo(tram) + " trăm ";
+           str += motSo(chuc) + " mươi ";
+           str += motSo(donvi);
+           return str;
+        }
+        
+    </script>
+</body>
+</html>

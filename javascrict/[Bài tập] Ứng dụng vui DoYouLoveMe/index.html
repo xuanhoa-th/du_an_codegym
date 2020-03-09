@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ứng dụng vui DoYouLoveMe</title>
+</head>
+<body >
+	<h2>DoYouLoveMe</h2>
+	<button onclick="yes()">Yes</button>
+	<button onmouseover="no()" id="move">No</button>
+
+	<script type="text/javascript">
+		let img = null;
+		function init(){
+			img = document.getElementById('move');
+			img.style.position = 'relative';
+			img.style.left = '0px';
+			img.style.top = '0px';
+		}
+		function yes() {
+			alert("DoYouLoveMe");
+		}
+		function no(){
+			let ab = img.style.left = parseInt(img.style.left) + Math.random()*150 +'px';
+			let ac = img.style.top = parseInt(img.style.top) + Math.random()*150 +'px';
+			let ad = img.style.bottom = parseInt(img.style.bottom) + - Math.random()*150 +'px';
+			let ae = img.style.height = parseInt(img.style.height) + Math.random()*150 +'px';
+			// alert(Math.random());
+
+		}
+
+window.onload = init;
+ window.innerHeight = '60px';
+ alert(window.innerHeight);
+ window.innerWidth = '75px';	
+	</script>
+</body>
+</html>
