@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai8</title>
+</head>
+<body>
+
+	<p>nhap m: <input type="text" name="" id="m" value="0" onkeyup="calSum()"></p>
+	<p>nhap n: <input type="text" name="" id="n" value="0"  onkeyup="calSum()"></p>
+	<p>Tong la: <span id="sum">0</span></p>
+
+
+	<!-- BTVN tinh tong cac so nguyen to tu m den n -->
+
+	<script type="text/javascript">
+		//nhap hai so nguyen m va n . tinh tong 
+		function calSum(){
+			let m = document.getElementById("m");
+				m = Number.parseInt(m.value);
+			let n = document.getElementById("n");
+				n = Number.parseInt(n.value);
+
+			let s = 0, i;
+				for ( i = m; i <= n; i++)
+				// 
+				// if (kiemtrachinhphuong(i)) neu gia tri can bac 2 la so nguyen
+				s += i;
+			document.getElementById("sum").innerHTML = " " + s;
+		}
+
+		//kiem tra chinh phuong neu gia tri can bac 2 cua no la so nguyen
+		function kiemtrachinhphuong(n){
+			return Number.isInteger(Math.sqrt(n));
+
+		}
+	</script>
+</body>
+</html>

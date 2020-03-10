@@ -5,6 +5,42 @@
 	<title>Game puzzle</title>
 </head>
 <body>
-	
+	 <img onclick="imgClick('1')" src="images/screenshot_1.png" alt="1" id="1" height="300px" width="800px">
+	 <img onclick="imgClick('2')" src="images/screenshot_2.png" alt="2" id="2" height="300px" width="800px">
+
+	 <script type="text/javascript">
+	 	function clickImgOne(index) {
+	 		let imgSrc = document.getElementById(index);
+	 		switch (imgSrc.alt) {
+	 			case "1":
+	 				imgSrc.src = "images/screenshot_2.png";
+	 				imgSrc.alt = "2";
+	 				break;
+	 			case "2":
+	 				imgSrc.src = "images/screenshot_3.png";
+	 				imgSrc.alt = "3";
+	 				break;
+	 			default:
+	 				imgSrc.src = "images/screenshot_1.png";
+	 				imgSrc.alt = "1";
+	 				break;
+	 		}
+	 	}
+	 	function imgClick(index){
+	 		let imgSrc = document.getElementById(index);
+	 		let number = +imgSrc.alt;
+	 		(number<6) ? number++ : number = 1;
+	 		imgSrc.alt = "images/screenshot_" + number + ".png";
+	 		imgSrc.alt = '' + number;
+	 		checkFullImg();
+	 	}
+	 	function checkFullImg(){
+	 		let imgSrc1 = document.getElementById('1');
+	 		let imgSrc2 = document.getElementById('2');
+	 		if (imgSrc1.alt === '1' && imgSrc2.alt ==='2') {
+	 			alert("bigo");
+	 		}
+	 	}
+	 </script>
 </body>
 </html>

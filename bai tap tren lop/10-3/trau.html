@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>trau</title>
+</head>
+<body>
+	<div class="container">
+		<div class="trau">
+			<p>trăm trâu,trăm cỏ</p>
+			<p>trâu đứng ăn năm</p>
+			<p>trâu nằm ăn ba</p>
+			<p>lụ khụ trâu già</p>
+			<p>ba con một bó</p>
+
+			<span id="dung"></span>
+			<span id="nam"></span>
+			<span id="gia"></span>
+
+			<span id="dung"></span>
+			<span id="nam"></span>
+			<span id="gia"></span>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		let trauDung,trauNam,trauGia;
+		for(trauDung = 1; trauDung <=100;trauDung++)
+			for(trauNam = 1; trauNam <=100; trauNam++ ) 
+				for(trauGia = 1; trauGia <=100; trauGia++ ) 
+					if ((5*trauDung + 3*trauNam + trauGia/3 == 100)&&(trauGia%3 ==0)&& (trauDung+trauNam+trauGia == 100))
+					 {
+					 	console.log("So trau dung:" + trauDung);
+					    console.log("So trau nam:" + trauNam);
+					    console.log("So trau gia:" + trauGia);
+					  // document.getElementById("dung").innerHTML = ("so trau dung:" + trauDung);
+					  // document.getElementById("nam").innerHTML = ("so trau nam:" + trauNam);
+					  // document.getElementById("gia").innerHTML = ("so trau gia:" + trauGia);
+					 }
+	</script>
+</body>
+</html>

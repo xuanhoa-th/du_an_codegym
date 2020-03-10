@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ứng dụng vui DoYouLoveMe</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body >
-	<h2>DoYouLoveMe</h2>
+<div class="container">
+		<h2>DoYouLoveMe</h2>
 	<button onclick="yes()">Yes</button>
-	<button onmouseover="no()" id="move">No</button>
-
+	<div class="btb">
+		<button onmouseover="no()" id="move">No</button>
+	</div>
+</div>
 	<script type="text/javascript">
 		let img = null;
 		function init(){
@@ -30,9 +34,7 @@
 		}
 
 window.onload = init;
- window.innerHeight = '60px';
- // alert(window.innerHeight);
- window.innerWidth = '75px';	
 	</script>
+
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<img onclick="imgClick('1')" src="images/screenshot_1.png" alt="1" id="1" height="300px" width="800px"/>
+<img onclick="imgClick('2')" src="images/screenshot_2.png" alt="2" id="2" height="300px" width="800px"/>
+<script>
+
+
+    function isClickImg1(index) {
+        let imgSrc1 = document.getElementById(index);
+        switch (imgSrc1.alt) {
+            case "1":
+                imgSrc1.src = "images/screenshot_2.png";
+                imgSrc1.alt = "2";
+                break;
+            case "2":
+                imgSrc1.src = "images/screenshot_3.png";
+                imgSrc1.alt = "3";
+                break;
+            default:
+                imgSrc1.src = "images/screenshot_1.png";
+                imgSrc1.alt = "1";
+                break;
+        }
+
+    }
+
+    function imgClick(index) {
+        let imgSrc1 = document.getElementById(index);
+        let number = +imgSrc1.alt;
+
+        /* if (number < 6) {
+             number++;
+         } else number = 1;
+         */
+        number < 6 ? number++ : number = 1;
+        imgSrc1.src = "images/screenshot_" + number + ".png";
+        imgSrc1.alt = '' + number;
+        checkFullImg();
+    }
+    function checkFullImg() {
+        let imgSrc1 = document.getElementById('1');
+        let imgSrc2 = document.getElementById('2');
+
+        if (imgSrc1.alt === '1' && imgSrc2.alt === '2'){
+            alert("Bingo");
+        }
+    }
+</script>
+</body>
+</html>
