@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ứng dụng máy tính</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="" id="input1">
+		<input type="text" name="" id="input2">
+		<br>
+		<br>
+		
+		
+	</form>
+		<button onclick="cong()">+</button>
+		<button onclick="tru()">-</button>
+		<button onclick="nhan()">x</button>
+		<button onclick="chia()">/</button>
+	<p id="Result"></p>
+	<script type="text/javascript">
+		function cong(){
+			var a = Number(document.getElementById("input1").value);
+			var b = Number(document.getElementById("input2").value);
+			// alert(a);
+			var Result  = 0;
+			Result = a+b;
+			// if (a+b) {
+			// 	Result = a+b;
+			// } else if (a-b) {
+			// 	Result = a+b;
+			// } else if (a*b) {
+			// 	Result = a*b;
+			// } else Result = a/b;
+			document.getElementById('Result').innerHTML= ("ket qua la =" + Result);
+		}
+		function tru(){
+			var a = Number(document.getElementById("input1").value);
+			var b = Number(document.getElementById("input2").value);
+			// alert(a);
+			var Result  = 0;
+			Result = a-b;
+			document.getElementById('Result').innerHTML= ("ket qua la =" + Result);
+		}
+		function nhan(){
+			var a = Number(document.getElementById("input1").value);
+			var b = Number(document.getElementById("input2").value);
+			var Result  = 0;
+			Result = a*b;
+			document.getElementById('Result').innerHTML= ("ket qua la =" + Result);
+		}
+		function chia(){
+			var a = Number(document.getElementById("input1").value);
+			var b = Number(document.getElementById("input2").value);
+			var Result  = 0;
+			Result = a/b;
+			
+			document.getElementById('Result').innerHTML= ("ket qua la =" + Result);
+		}
+
+
+
+	</script>
+</body>
+</html>
