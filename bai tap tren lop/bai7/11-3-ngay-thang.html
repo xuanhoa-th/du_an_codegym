@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai7</title>
+</head>
+<body>
+	<!-- nhap thang nam roi cho biwt thang do co bao nhieu ngay -->
+	<button onclick="tinhsongay()">nhap thang</button>
+	<button onclick="tinhsongaygiuacacthang()">tinh so ngay giua cac thang</button>
+
+
+	<script type="text/javascript">
+		function tinhsongay(){
+			let thang = prompt("nhap thang");
+			thang = Number.parseInt(thang);
+			let nam = prompt("nhap nam");
+			nam = Number.parseInt(nam);
+
+			alert("thang" + thang + "/" + nam + "co" + tinhngay(thang,nam)+"ngay.");
+		}
+		function tinhngay(thang,nam){
+			switch (thang) {
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12: return 31;
+				case 4:
+				case 6:
+				case 9:
+				case 11: return 30;
+				case 2: if (kiemtraNamNhuan(nam)) 
+							return 29;
+							else 
+								return 28;
+				default:
+					return "khong phai la thang hop le"
+			}
+
+		}
+		function kiemtraNamNhuan(nam){
+			return (nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0);
+		}
+		function tinhsongaygiuacacthang(){
+			let thangdau = prompt("nhap thang dau");
+			thangdau = Number.parseInt(thangdau);
+			let thangcuoi = prompt("nhap thang cuoi");
+			thangcuoi = Number.parseInt(thangcuoi);
+			let nam = prompt("nhap nam");
+			nam = Number.parseInt(nam);
+
+			let i , sum = 0;
+			for(i = thangdau; i<= thangcuoi; i ++)
+				sum += tinhngay(i,nam);
+			alert("tong so ngay la" + sum);
+
+
+		}
+
+	</script>
+</body>
+</html>
