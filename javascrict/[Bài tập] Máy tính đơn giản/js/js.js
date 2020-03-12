@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Tiện ích máy tính online</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<div class="calculator">
-		<input type="text" class="box-calculation" value="">
-		<input type="text" class="box-result" value="">
-		<div class="box-button">
-			<button class="refresh">CE</button>
-			<button class="del">Del</button>
-			<button class="plus operation">+</button>
-			<button class="minus operation">-</button>
-			<button class="times operation">x</button>
-			<button class="divide operation">/</button>
-			<button class="number">9</button>
-			<button class="number">8</button>
-			<button class="number">7</button>
-			<button class="number">6</button>
-			<button class="number">5</button>
-			<button class="number">4</button>
-			<button class="number">3</button>
-			<button class="number">2</button>
-			<button class="number">1</button>
-			<button class="number">0</button>
-			<button class="dot">.</button>
-			<button class="equal">=</button>
-		</div>
-	</div>
-	
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script>
-		// Thực hiện các hành động bên trong khi tài liệu html của trang web được load xong và cây DOM được tạo thành
 		$(document).ready(function() {
 			$('.box-calculation').attr('disabled', 'true'); // Vô hiệu hoá ô phép tính
 			$('.box-result').attr('disabled', 'true'); // Vô hiệu hoá ô kết quả
@@ -87,6 +51,3 @@
 			$result = $('.box-calculation').val(); // Lấy chuỗi giá trị trong ô phép tính
 			$('.box-result').val(eval($result)); // Hiển thị kết quả trong ô kết quả
 		});
-	</script>
-</body>
-</html>
