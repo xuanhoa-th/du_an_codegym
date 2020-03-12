@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tạo và thao tác với mảng</title>
+</head>
+<body>
+
+<h3>Sample screen</h3>
+<input type="text" placeholder="Nhap vao" id="textvalue">
+<button id="btbAdd" onclick="add()">ADD</button>
+<button id="btnDisplay"  onclick="dis()">Display</button>
+<div id="Result"></div>
+<script>
+    let x = 0;
+   let array = Array();
+   function add() {
+       array[x] = document.getElementById("textvalue").value;
+       alert("Element:" + array[x]+"Added at index" + x);
+       x++;
+       document.getElementById("textvalue").value=" ";
+
+   }
+   function dis() {
+            let e = "<hr/>";
+            for (let i = 0; i < array.length;i++){
+                e += "Elemnet" + i + " "+array[i]+"<br/>";
+            }
+            document.getElementById("Result").innerHTML = e;
+   }
+</script>
+
+</body>
+</html>

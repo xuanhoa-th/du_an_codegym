@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh uoc so trung lon nhat cua 2 so</title>
+</head>
+<body>
+<button onclick="uc()">ucln</button>
+<script>
+    /* nhap 2 so nguyen duong a va b tinh uoc so chung lon nhat cua a va b*/
+    function uc(){
+        let a = +prompt("nhap vao so a");
+        let b = +prompt("nhap vao so b");
+        alert(" UCLN cua "+ a + " va " +b+ " la: " + UCSLN(a,b) );
+    }
+
+    function UCSLN(a,b) {
+        while (a != b)
+        if (a>b)
+             a -= b;
+        else b -= a;
+        return a;
+
+    }
+</script>
+</body>
+</html>

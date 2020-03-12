@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nhap so nguyen bat ki va tinh tong cua no</title>
+</head>
+<body>
+	<!-- // nhap so nguyen duong tinh tong cac chu so chan -->
+	<button onclick="tinhTong()">nhap so</button>
+	<script type="text/javascript">
+
+		function tinhTong(){
+			let n = +prompt("nhap vao so n");
+			alert("tong cac chu so chan la :" + nhapso(n));
+
+		}
+
+		function nhapso(n){
+			let sum = 0;
+			while (n>0) {
+				if (n % 2 === 0 ) 
+				  sum += n % 10;
+				  n = Math.floor(n/10);
+			}
+			return sum;
+		}
+
+	</script>
+</body>
+</html>
