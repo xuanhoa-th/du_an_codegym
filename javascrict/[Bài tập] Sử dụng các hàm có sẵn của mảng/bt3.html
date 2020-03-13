@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let num = prompt("nhap vao chuoi ki tu");
+		let str = num.toString();
+		// console.log(num);
+		let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		let lower = 'abcdefghijklmnopqrstuvwxyz';
+		let result = [];
+			for (let x = 0; x < str.length; x++) {
+				if (upper.indexOf(str[x])!== -1) {
+					result.push(str[x].toLowerCase());
+				} else if (lower.indexOf(str[x])!== -1)
+				{
+					result.push(str[x].toUpperCase());
+				}
+				else {
+					result.push(str[x]);
+				}
+			}
+			console.log(result.join(''));
+	</script>
+</body>
+</html>

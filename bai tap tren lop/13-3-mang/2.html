@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        
+        // 2.tinh tong cac so chan so le chinh phuong, nguyen to
+        // 1. xap xep mang theo thu tu tang dan,
+        // 3..xap xep mang sao cho ca so le tang dan, so chan giam dan
+        let myArray = new Array();
+        initArray();
+        showArray();
+        console.log("Tổng là: " + calsum());
+        /*--------utility functions ---------*/
+        function initArray(){
+            let count = +prompt("Nhập số phần tử của mảng");
+            for(let i = 0; i< count; i++)
+                myArray.push(Math.round(1000*Math.random()));
+        }
+        function showArray(){
+            for(let i = 0; i< myArray.length; i++)
+               console.log(myArray[i]);
+        }
+        function calsum() {
+            let sum = 0;
+            for(let i = 0; i< myArray.length; i++)
+                sum += myArray[i];
+            return sum;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

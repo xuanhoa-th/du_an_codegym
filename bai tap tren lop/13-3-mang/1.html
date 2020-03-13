@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- nhap so phan tu cua mag
+	sinh ngau nhien mang
+	tinh tong cac phan tu cua mang -->
+
+	<script >
+		 
+		let myArray = new Array();
+		initArray();
+		showArray();
+		console.log("tong la" + calsum());
+		
+		
+		function initArray(){
+			   let count = +prompt("nhap so phan tu cua mang:");
+				for(let i = 0; i <count; i++)
+					myArray.push(Math.round(1000*Math.random()));
+		}
+		function showArray(){
+			for(let i = 0 ; i< myArray.length; i++)
+				console.log(myArray[i]);
+		}
+
+		function calsum(){
+			let sum = 0;
+			for(let i = 0; i< myArray.length; i++)
+				sum += myArray[i];
+			return sum;
+		}
+
+	</script>
+
+</body>
+</html>
