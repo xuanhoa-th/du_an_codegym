@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+    let a = prompt("Nhập vào chuỗi a:");
+    strA = a.toString();
+    let array = strA.split(',');
+    var newArray = [""];
+    console.log(array);
+    let vitri = array.indexOf('-');
+    if (vitri != -1) {
+        newArray = array.replace('-','_');
+        console.log("tim thay");
+        console.log(newArray);
+    }
+    else {
+        console.log("khong tim thay -")
+    }
+
+
+</script>
+</body>
+</html>

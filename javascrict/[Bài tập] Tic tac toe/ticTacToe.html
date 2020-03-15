@@ -2,60 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        table {
-            border: 1px solid;
-            border-collapse: collapse;
-        }
-
-        tr, td {
-            border: 1px solid;
-
-        }
-
-        td {
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    
-<table id="multipleTable">
-
-</table>
-<script>
-    function genTables() {
-        let str = '';
-        for (let i = 1; i <= 20; i++) {
-            str += "<tr>";
-            for (let j = 1; j <= 30; j++) {
-
-                str += '<td onclick="clickCell(this)"></td>';
-            }
-            str += "</tr>";
+    <style type="text/css">
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
         }
-        document.getElementById("multipleTable").innerHTML = str;
-    }
+        tr,td {
+            border: 1px solid black;
+            /*font-size: 30px;*/
 
-    genTables();
-    // let turn = 1;
-    // function clickCell(cell) {
-    //     if (cell.innerHTML === '') {
-    //         if (turn === 1) {
-    //             cell.innerHTML = "x";
-    //             turn = 2;
-    //         } else {
-    //             cell.innerHTML = "o";
-    //             turn = 1;
-    //         }
-    //     }
-    // }
+        }
+        td{
+            width: 30px;height: 30px;
+            text-align: center;
+        }
+    </style>
+    <table id="table">
+        <!-- <tr>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr> -->
+    </table>
+    <script type="text/javascript">
+            function Caro_table(){
+                let tb = '';
+                for(let i=0;i<15;i++){
+                    tb += "<tr>"
+                    for(let j=0; j<15;j++){
+                        tb += "<td onclick = 'click_Caro(this)'></td>";
+                    }
+                    tb +="</tr>";
+                }
+                document.getElementById("table").innerHTML = tb;
+            }
+            Caro_table();
 
-</script>
+            let turn = 1;
+            function click_Caro(caro){
+                if (caro.innerHTML === '') {
+                    if (turn === 1) {
+                        caro.innerHTML = "x";
+                        turn = 2;
+                    } else {
+                        caro.innerHTML="o";
+                        turn = 1;
+                    }
+                }
+            }
+    </script>
 </body>
 </html>

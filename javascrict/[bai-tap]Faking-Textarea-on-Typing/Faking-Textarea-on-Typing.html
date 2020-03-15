@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>[Bài tập] Ứng dụng vui Faking Textarea on Typing</title>
+</head>
+<body>
+	<div class="container" style="text-align: center;">
+		<h3>Type anthing slowly</h3>
+		<textarea style="width: 50%; height: 300px; font-size: 40px" placeholder="gõ vào đây" onkeydown="Faking()" id="go">
+		</textarea>
+	</div>
+<script type="text/javascript">
+	function Faking(){
+		let array = ["TOI ","LA ","MOT ","DUA ","NGOC ","! ","! "];
+		let sum = '';
+		for(let i=0;i<array.length;i++)
+			sum += array[i];
+
+			document.getElementById("go").innerHTML = sum;
+	}
+</script>
+</body>
+</html>
